@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+}
+
+.logo img{
+    width: 164px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.right ul li span{
+    padding: 0 5px;
+}
+
+.menu{
+    color: rgb(0,182,209);
+    display: none;
+    width: 32px;
+    height: 56px;
+}
+
+.menu-bar{
+    width: 32px;
+    height: 32px;
+    padding: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+    .right{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header{
+        width: 100%;
+    }
+    .nav{
+        width: 90%;
+        justify-content: space-between;
+    }
+}
+
+/* main section */
+
+.main-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.three-blocks-maper{
+    /* background-color: orange; */
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.one-block-maper{
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.exe-blocks-2{
+    display: block;
+    width: 300px;
+    height: 160px;
+    margin: 15px;
+}
+
+.exe-blocks{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(249,249,249);
+    width: 300px;
+    height: 160px;
+    margin: 15px;
+}
+
+.exe-blocks h3{
+    height: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.exe-blocks h3 p{
+    font-size: 60%;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.download-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.a-32-bit,.a-64-bit{
+    text-decoration: none;
+    color: #fff;
+    width: 125px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.a-32-bit{
+    background-color: rgb(0,182,209);
+}
+
+.a-64-bit{
+    background-color: rgb(92,184,92);
+}
+
+@media screen and (min-width: 850px) and (max-width: 1100px){
+    .three-blocks-maper{
+        margin: 15px;
+        width: 100%;
+    }
+    .one-block-maper{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 15px;
+        width: 100%;
+    }
+    .exe-blocks{
+        height: 200px;
+        width: 44%;
+    }
+    .download-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 8px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* .main-body{
+        
+    } */
+    .three-blocks-maper{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* margin-top: 15px; */
+        height: 690px;
+        width: 100%;
+    }
+    .exe-blocks{
+        width: 90%;
+        height: 200px;
+        margin: 15px;
+    }
+    .download-section{
+        justify-content: center;
+    }
+    .a-32-bit{
+        margin-right: 10px;
+    }
+    .one-blocks-maper{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 100%;
+    }
+}
